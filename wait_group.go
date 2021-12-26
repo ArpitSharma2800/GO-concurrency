@@ -26,7 +26,7 @@ func main() {
 func predator() {
 	fmt.Println("Executing predator")
 	wg.Done() //this will infirm system that task is completed
-}
+  }
 
 func zephyrus() {
 	fmt.Println("Executing zephyrus")

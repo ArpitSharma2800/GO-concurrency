@@ -20,7 +20,6 @@ func main() {
 		go func() {
 			mg.Lock() //locking so that it will block other routines to access while running
 			temp := counter
-			runtime.Gosched() //it yields the processor, allowing other goroutines to run
 			temp++
 			counter = temp
 			mg.Unlock() //it will unlock for other routines to access
